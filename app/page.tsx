@@ -44,7 +44,7 @@ export default function Home() {
         <img 
   src="/logo.png" 
   alt="Logo Jardín de las Brisas II"
-  style={{ width: '150px', height: '150px', objectFit: 'contain', marginBottom: '8px' }}
+  style={{ width: '150px', height: '150px', objectFit: 'contain', marginBottom: '8px', display: 'block', margin: '0 auto 16px auto' }}
 />
 <h1 style={{ color: '#1a5276', margin: '0 0 4px 0', fontSize: '24px' }}>
   Portal Brisas
