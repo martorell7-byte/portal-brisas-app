@@ -7,10 +7,16 @@ export async function signIn(email: string, password: string) {
     headers: {
       'Content-Type': 'application/json',
       'apikey': supabaseKey,
+      'Authorization': `Bearer ${supabaseKey}`
     },
-    body: JSON.stringify({ email, password })
+    body: JSON.stringify({ 
+      email: email.trim(), 
+      password: password 
+    })
   })
-  return response.json()
+  const data = await response.json()
+  console.log('Respuesta Supabase:', data)
+  return data
 }
 
 export { supabaseUrl, supabaseKey }
