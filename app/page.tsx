@@ -18,6 +18,9 @@ if (result.error || result.error_code) {
 } else {
   window.location.href = '/dashboard'
 }
+} else {
+  window.location.href = '/dashboard'
+}
     }
     setLoading(false)
   }
