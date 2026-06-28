@@ -13,14 +13,10 @@ export default function Home() {
     setLoading(true)
     setError('')
     const result = await signIn(email, password)
-if (result.error || result.error_code) {
-  setError('Correo o contraseña incorrectos')
-} else {
-  window.location.href = '/dashboard'
-}
-} else {
-  window.location.href = '/dashboard'
-}
+    if (result.error || result.error_code) {
+      setError('Correo o contraseña incorrectos')
+    } else {
+      window.location.href = '/dashboard'
     }
     setLoading(false)
   }
