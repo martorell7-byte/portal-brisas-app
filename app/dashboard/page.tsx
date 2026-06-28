@@ -15,7 +15,11 @@ export default function Dashboard() {
         alignItems: 'center'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <span style={{ fontSize: '28px' }}>🏢</span>
+        <img 
+  src="/logo.png" 
+  alt="Logo Jardín de las Brisas II"
+  style={{ width: '50px', height: '50px', objectFit: 'contain' }}
+/>
           <div>
             <h1 style={{ color: 'white', margin: 0, fontSize: '18px' }}>Portal Brisas</h1>
             <p style={{ color: '#aed6f1', margin: 0, fontSize: '12px' }}>Condominio Jardín de las Brisas Dos</p>
