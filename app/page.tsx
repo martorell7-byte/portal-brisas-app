@@ -41,13 +41,17 @@ export default function Home() {
         boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
         textAlign: 'center'
       }}>
-        <div style={{ marginBottom: '8px', fontSize: '48px' }}>🏢</div>
-        <h1 style={{ color: '#1a5276', margin: '0 0 4px 0', fontSize: '24px' }}>
-          Portal Brisas
-        </h1>
-        <p style={{ color: '#7f8c8d', margin: '0 0 32px 0', fontSize: '14px' }}>
-          Condominio Jardín de las Brisas Dos
-        </p>
+        <img 
+  src="/logo.png" 
+  alt="Logo Jardín de las Brisas II"
+  style={{ width: '150px', height: '150px', objectFit: 'contain', marginBottom: '8px' }}
+/>
+<h1 style={{ color: '#1a5276', margin: '0 0 4px 0', fontSize: '24px' }}>
+  Portal Brisas
+</h1>
+<p style={{ color: '#7f8c8d', margin: '0 0 32px 0', fontSize: '14px' }}>
+  Condominio Jardín de las Brisas Dos
+</p>
 
         <div style={{ marginBottom: '16px', textAlign: 'left' }}>
           <label style={{ display: 'block', marginBottom: '6px', color: '#2c3e50', fontSize: '14px', fontWeight: 'bold' }}>
