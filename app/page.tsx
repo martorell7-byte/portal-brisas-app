@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { signIn } from './lib/supabase'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const router = useRouter()
 
   const handleLogin = async () => {
     setLoading(true)
@@ -15,10 +17,10 @@ export default function Home() {
     const result = await signIn(email, password)
     if (result.error || result.error_code) {
       setError('Correo o contraseña incorrectos')
+      setLoading(false)
     } else {
-      window.location.href = '/dashboard'
+      router.push('/dashboard')
     }
-    setLoading(false)
   }
 
   return (
